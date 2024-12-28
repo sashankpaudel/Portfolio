@@ -272,7 +272,6 @@ section {
     border-right: 384px solid var(--main-color);
     border-bottom: 384px solid var(--main-color);
     border-left: 384px solid transparent;
-           
 }
 
 .home-img img {
@@ -479,7 +478,7 @@ span {
     box-shadow: 0 .1rem .5rem var(--shadow-color);
 }
 
-.contact form .input-box .input{
+.contact form .input-box input{
     width: 49%;
 }
 
@@ -530,7 +529,7 @@ span {
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        font-size: 53%;
     }
 
     .home .profession-container {
@@ -538,19 +537,24 @@ span {
     }
 
     .home .profession-container .profession-box {
-        right: -12rem;
+        right: -20rem;
         height: 85.8rem;
     }
 
     .home .profession-container .overlay {
-        right: -9rem;
+        right: -10rem;
+    }
+
+    .home-img img {
+        bottom: -8rem;
+    }
+
+    .home .profession h3{
+        font-size: 2.2rem;
     }
 }
-
 @media (max-width: 1024px) {
-    .header {
-        padding: 2rem 3%;
-    }
+    
 
     section {
         padding: 10rem 3% 2rem;
@@ -564,6 +568,10 @@ span {
         right: -15rem;
     }
 
+    .home-img img {
+        right: 5rem;
+        width: 110%;
+    }
 }
 
 @media (max-width: 991px) {
@@ -582,15 +590,15 @@ span {
     }
 
     .home .profession-container .profession-box{
-        right: -45rem;
+        right: -35.5rem;
     }
 
     .home .profession-container .overlay {
-        right: -39.5rem;
+        right: -35.5rem;
     }
 
     .home-img img {
-        width: 40%;
+        width: 100%;
     }
 
     .services,
@@ -610,11 +618,12 @@ span {
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
+        margin-right: 5rem;
     }
 
     #darkMode-icon {
         position: absolute;
-        right: 7rem;
+        right: 17rem;
         font-size: 2.6rem;
         color: var(--text-color);
         margin-bottom: .1rem;
@@ -682,7 +691,7 @@ span {
 
     .home .profession-container .profession-box {
         position: fixed;
-        top: 60%;
+        top: 70%;
         left: 0;
         border-radius: 0;
         width: 100%;
@@ -695,7 +704,7 @@ span {
     }
 
     .home .profession-container .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-120px, -210px);
+        transform: rotate(-90deg) translate(-80px, -250px);
     }
     
     .home .profession-container .profession:nth-child(1) i {
@@ -703,15 +712,15 @@ span {
     }
 
     .home .profession-container .profession:nth-child(2) {
-        transform: rotate(-0deg) translate(0px, -335px);
+        transform: rotate(0deg) translate(0px, -335px);
     }
     
     .home .profession-container .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-115px, -450px);
+        transform: rotate(90deg) translate(-80px, -415px);
     }
 
     .home .profession-container .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-220px, -335px);
+        transform: rotate(180deg) translate(-120px, -335px);
     }
 
     .home .profession-container .circle {
@@ -728,6 +737,13 @@ span {
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
+    }
+
+    .home-img img {
+        position: absolute;
+        width: 105%;
+        bottom: 0;
+        right: 0;
     }
 
     .about {
@@ -749,14 +765,32 @@ span {
         margin-bottom: 3rem; 
     }
 
+    .services .services-container,
     .portfolio .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-layer h4 {
+        font-size: 2.2rem;
+    }
+
+    .portfolio-layer p {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 617px) {
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
+    }
+
+    .portfolio-layer h4 {
+        font-size: 2.6rem;
+    }
+    
+    .portfolio-layer p {
+        font-size: 1.2rem;
+        margin: .3rem 0 1rem;
     }
 }
 
@@ -774,7 +808,7 @@ span {
     }
 
     .home .profession-box .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-110px, -220px);
+        transform: rotate(-90deg) translate(-65px, -265px);
     }
 
     .home .profession-box .profession:nth-child(2) {
@@ -782,11 +816,20 @@ span {
     }
 
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-105px, -440px);
+        transform: rotate(90deg) translate(-70px, -415px);
     }
 
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-210px, -335px);
+        transform: rotate(180deg) translate(-130px, -330px);
+    }
+
+    .home-img img {
+        width: 125%;
+        right: -3rem;
+    }
+
+    .services .services-container {
+        grid-template-columns: 1fr;
     }
 
     .contact form .input-box .input {
