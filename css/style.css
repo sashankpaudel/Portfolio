@@ -554,8 +554,6 @@ span {
     }
 }
 @media (max-width: 1024px) {
-    
-
     section {
         padding: 10rem 3% 2rem;
     }
@@ -566,11 +564,6 @@ span {
 
     .home .profession-container .overlay {
         right: -15rem;
-    }
-
-    .home-img img {
-        right: 5rem;
-        width: 110%;
     }
 }
 
@@ -598,7 +591,7 @@ span {
     }
 
     .home-img img {
-        width: 100%;
+        display: none;
     }
 
     .services,
@@ -739,13 +732,6 @@ span {
         border-width: 23.9rem;
     }
 
-    .home-img img {
-        position: absolute;
-        width: 105%;
-        bottom: 0;
-        right: 0;
-    }
-
     .about {
         flex-direction: column-reverse;
         text-align: center;
@@ -821,11 +807,6 @@ span {
 
     .home .profession-box .profession:nth-child(4) {
         transform: rotate(180deg) translate(-130px, -330px);
-    }
-
-    .home-img img {
-        width: 125%;
-        right: -3rem;
     }
 
     .services .services-container {
